@@ -1,0 +1,570 @@
+/* :root {
+  --color-main: #333;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--color-main);
+} */
+.mainLayout {
+  top: 0px;
+  left: 0px;
+  width: 1280px;
+  height: 2966px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  opacity: 1;
+  border: solid 2px;
+  margin-left: 5rem;
+}
+
+.headerWithMenu {
+  position: inherit;
+  top: 0px;
+  left: 0px;
+  width: 1280px;
+  height: 200px;
+  background: transparent url('') 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.buildTank {
+  position: inherit;
+  top: 207px;
+  left: 0px;
+  width: 1280px;
+  height: 300px;
+  background: transparent linear-gradient(180deg, #cee8f4 0%, #97c9e0 100%) 0%
+    0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.buildTankText {
+  position: relative;
+  top: 20px;
+  margin-left: 70px;
+  width: 261px;
+  height: 36px;
+  text-align: left;
+  padding-top: 10px;
+  font: normal normal 800 36px/32px Proxima Nova A;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.chooseTank {
+  position: relative;
+  left: 70px;
+  width: 885px;
+  height: 192px;
+  background: 0% 0% no-repeat padding-box padding-box rgb(255, 255, 255);
+  border-radius: 28px;
+  opacity: 1;
+}
+
+.chooseTankH4 {
+  position: relative;
+  margin-left: 60px;
+  padding-top: 10px;
+  width: 548px;
+  height: 24px;
+  text-align: left;
+  font: normal normal bold 24px/32px Proxima Nova A;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.chooseTankText {
+  position: relative;
+  margin-left: 60px;
+  /* width: 548px; */
+  height: 85px;
+  max-height: 85px;
+  color: var(--dark-gray);
+  text-align: left;
+  font: normal normal normal 16px/20px Proxima Nova A;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+}
+
+.tankImage {
+  position: relative;
+  left: 1000px;
+  width: 164px;
+  height: 158px;
+  opacity: 1;
+}
+
+.tankCartBuilder {
+  position: relative;
+  left: 0px;
+  width: 1280px;
+  height: 200px;
+  background: #ecf5fa 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.myTank {
+  position: relative;
+  width: 102px;
+  height: 26px;
+  margin-left: 110px;
+  padding-top: 23px;
+  text-align: center;
+  font: normal normal 800 26px/32px Proxima Nova A;
+  letter-spacing: 0px;
+  color: #007db5;
+  opacity: 1;
+}
+
+.tankCartBuilderRightArrow {
+  margin-top: -20px;
+  position: relative;
+  width: 10px;
+  height: 20px;
+  opacity: 1;
+  margin-left: 317px;
+}
+
+.tankCartBuilderRightArrow2 {
+  margin-top: -20px;
+  position: relative;
+  width: 10px;
+  height: 20px;
+  opacity: 1;
+  margin-left: 636px;
+}
+
+.tankAccessories {
+  position: relative;
+  width: 206px;
+  height: 26px;
+  margin-left: 430px;
+  padding-top: 65px;
+  text-align: center;
+  font: 800 26px / 32px 'Proxima Nova A';
+  letter-spacing: 0px;
+  color: rgb(153, 153, 153);
+  opacity: 1;
+}
+
+.newFishImage {
+  position: inherit;
+  padding: 5px;
+  left: 20px;
+  width: 1250px !important;
+  height: 325px !important;
+  background: transparent 0% 0% no-repeat padding-box;
+  opacity: 1;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.videoGalary {
+  position: inherit;
+  margin-top: 50px;
+  padding: 5px;
+  left: 20px;
+  width: 1250px !important;
+  height: 695px !important;
+  background: transparent 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.chooseButton {
+  position: relative;
+  width: 140px;
+  height: 40px;
+  margin-left: 90px;
+  margin-top: 35px;
+  border: 1px solid #007db5;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #007db5;
+  border-radius: 4px;
+  color: #007db5;
+  opacity: 1;
+}
+
+.popup-box {
+  position: absolute;
+  top: -500px;
+  left: 0px;
+  width: 1280px;
+  height: 3000px;
+  background: #000000 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.box {
+  position: relative;
+  top: 37px;
+  left: 169px;
+  width: 960px;
+  height: 1813px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  opacity: 1;
+  overflow-y: auto;
+}
+.close-icon {
+  content: 'x';
+  cursor: pointer;
+  position: relative;
+  top: 10px;
+  width: 50px;
+  height: 16px;
+  text-align: left;
+  font: normal normal bold 14px/16px Arial;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-right: 10px;
+  float: right;
+}
+
+.resourcesGalary {
+  position: inherit;
+  left: 21px;
+  width: 1268px;
+  height: 438px;
+  opacity: 1;
+  color: #007db5;
+  margin: 5px;
+}
+
+.resourcesGalaryHeading {
+  margin-top: 50px;
+  position: inherit;
+  margin-left: 458px;
+  width: 558px;
+  height: 40px;
+  text-align: center;
+  font: normal normal 800 40px/40px Proxima Nova A;
+  letter-spacing: 0px;
+  color: #003b49;
+  opacity: 1;
+}
+
+.resourceGaleryContent {
+  position: inherit;
+  width: 400px;
+  height: 349px;
+  opacity: 1;
+}
+
+.resourceGalaryImage {
+  position: inherit;
+  margin-left: 21px;
+  width: 385px;
+  height: 267px;
+  background: transparent 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.resourceGalaryTile {
+  position: inherit;
+  margin-top: 13px;
+  margin-left: 21px;
+  width: 400px;
+  height: 60px;
+  text-align: center;
+  font: normal normal 800 20px/22px Proxima Nova A;
+  letter-spacing: 0px;
+  color: #003b49;
+  text-transform: capitalize;
+  opacity: 1;
+}
+
+.resourceGalaryReadMore {
+  position: inherit;
+  margin-left: 186px;
+  width: 70px;
+  height: 18px;
+  color: var(--loyal-blue);
+  text-align: center;
+  font: normal normal bold 13px/18px Open Sans;
+  letter-spacing: 0px;
+  color: #007db4;
+  opacity: 1;
+}
+
+.productDetailWindowTitle {
+  position: relative;
+  margin-top: 40px;
+  left: 374px;
+  width: 249px;
+  height: 36px;
+  text-align: left;
+  font: normal normal 800 36px/32px Proxima Nova A;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.productDetailWindowSubTitle {
+  position: relative;
+  margin-top: 30px;
+  left: 365px;
+  width: 282px;
+  height: 24px;
+  text-align: left;
+  font: normal normal bold 24px/16px Proxima Nova A;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.productDetailsWindowButton {
+  position: relative;
+  float: left;
+  margin-top: 10px;
+  margin-right: 20px;
+  left: 170px;
+  width: 200px;
+  height: 60px;
+  border-radius: 4px;
+  border: 1px solid #007db5;
+  opacity: 1;
+}
+
+.productDetailsWindowButtonText {
+  position: inherit;
+  width: 92px;
+  height: 16px;
+  top: 13px;
+  left: 52px;
+  text-align: center;
+  font: normal normal bold 16px/32px Proxima Nova A;
+  letter-spacing: 0px;
+  opacity: 1;
+}
+
+.productDetailsWindowButtonDesc {
+  position: inherit;
+  top: 65px;
+  height: 16px;
+  text-align: center;
+  font: normal normal normal 16px/16px Proxima Nova A;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  margin-left: 50px;
+  width: 100px;
+}
+
+.productDetailsWindowAdditionInfo {
+  position: absolute;
+  top: 293px;
+  width: 303px;
+  left: 66px;
+  height: 24px;
+  text-align: left;
+  font: normal normal bold 24px/16px Proxima Nova A;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.productDetailsWindowFilterInfo {
+  position: absolute;
+  top: 330px;
+  left: 66px;
+  width: 315px;
+  height: 16px;
+  text-align: left;
+  font: normal normal normal 16px/16px Proxima Nova A;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.show {
+  position: relative;
+  width: 40px;
+  height: 16px;
+  text-align: left;
+  font: normal normal bold 16px/16px Proxima Nova A;
+  letter-spacing: 0px;
+  color: #007db5;
+  opacity: 1;
+}
+
+.popUpWindowProductsSection {
+  position: inherit;
+  top: 230px;
+  left: 66px;
+  width: 837px;
+  height: 1600px;
+  opacity: 1;
+  border: solid 1px;
+}
+
+.productPagination {
+  width: 837px;
+  height: 41px;
+  opacity: 1;
+  position: absolute;
+}
+
+.productTraser {
+  position: relative;
+  width: 228px;
+  height: 387px;
+  opacity: 1;
+  float: left;
+  left: 20px;
+  padding-left: 5px;
+  margin-right: 45px;
+}
+
+.productTraserImage {
+  width: 228px;
+  height: 228px;
+  background: transparent 0% 0% no-repeat padding-box;
+  opacity: 1;
+  position: inherit;
+}
+
+.productTraserTitle {
+  position: inherit;
+  width: 211px;
+  height: 32px;
+  text-align: left;
+  font: normal normal bold 14px/16px Arial;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+}
+
+.productTraserPrice {
+  position: inherit;
+  width: 58px;
+  height: 17px;
+  text-align: left;
+  font: normal normal bold 16px/18px Arial;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+}
+
+.productTraserRating {
+  position: inherit;
+  width: 12px;
+  height: 12px;
+  color: #317db4 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.productTraserChooseButton {
+  position: inherit;
+  width: 90px;
+  height: 27px;
+  background: #007db5 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+  margin-top: 20px;
+  opacity: 1;
+}
+.productTraserChooseButtonText {
+  width: 46px;
+  height: 14px;
+  text-align: center;
+  font: normal normal bold 14px/14px Proxima Nova A;
+  letter-spacing: 0px;
+  color: #ffffff;
+  margin-left: 15px;
+  opacity: 1;
+}
+.previousTipIcon {
+  border: 3px solid var(--unnamed-color-007db5);
+  border: 3px solid #007db5;
+  opacity: 1;
+}
+.previousTip {
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
+    var(--unnamed-font-size-14) / var(--unnamed-line-spacing-26)
+    var(--unnamed-font-family-proxima-nova-a);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-007db5);
+  text-align: left;
+  font: normal normal bold 14px/26px Proxima Nova A;
+  letter-spacing: 0px;
+  color: #007db5;
+  opacity: 1;
+  text-decoration: none;
+}
+.tipsCount {
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
+    var(--unnamed-font-size-14) / var(--unnamed-line-spacing-26)
+    var(--unnamed-font-family-proxima-nova-a);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--dark-gray);
+  text-align: center;
+  font: normal normal bold 14px/26px Proxima Nova A;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin: 0px 55px;
+}
+.tipsContent {
+  height: 60px;
+  max-height: 60px;
+  display: flex;
+  align-items: center;
+}
+.selectedTipsContent {
+  width: 550px;
+  max-width: 550px;
+}
+.selectedTipsImage {
+  margin-left: 30px;
+  margin-right: 70px;
+}
+.tipsNextPrev {
+  margin-top: 20px;
+}
+.prevousIcon {
+  margin-right: 10px;
+}
+.nextIcon {
+  margin-left: 10px;
+}
+.tipsContentAnimation {
+  animation-duration: 1s;
+  animation-name: slidein;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 25%;
+    width: 100%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+@-webkit-keyframes slidein {
+  from {
+    margin-left: 25%;
+    width: 100%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.active {
+  background: #007db5 0% 0% no-repeat padding-box;
+  color: #ffffff;
+}
+.inactive {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  color: #007db5;
+}

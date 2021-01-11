@@ -1,0 +1,74 @@
+{
+  "productsList": [
+    {
+      "imageUrl": "https://picsum.photos/200/300",
+      "productTitle": "Prodct1",
+      "price": 121.0,
+      "rating": 4,
+      "tankSize": "small"
+    },
+    {
+      "imageUrl": "https://picsum.photos/200/300",
+      "productTitle": "Prodct2",
+      "price": 122.0,
+      "rating": 5,
+      "tankSize": "large"
+    },
+    {
+      "imageUrl": "https://picsum.photos/200/300",
+      "productTitle": "Prodct3",
+      "price": 123.0,
+      "rating": 2,
+      "tankSize": "small"
+    },
+    {
+      "imageUrl": "https://picsum.photos/200/300",
+      "productTitle": "Prodct4",
+      "price": 124.0,
+      "rating": 5,
+      "tankSize": "small"
+    },
+    {
+      "imageUrl": "https://picsum.photos/200/300",
+      "productTitle": "Prodct5",
+      "price": 125.0,
+      "rating": 4,
+      "tankSize": "large"
+    },
+    {
+      "imageUrl": "https://picsum.photos/200/300",
+      "productTitle": "Prodct6",
+      "price": 126.0,
+      "rating": 1,
+      "tankSize": "medium"
+    },
+    {
+      "imageUrl": "https://picsum.photos/200/300",
+      "productTitle": "Prodct7",
+      "price": 127.0,
+      "rating": 3,
+      "tankSize": "small"
+    },
+    {
+      "imageUrl": "https://picsum.photos/200/300",
+      "productTitle": "Prodct8",
+      "price": 128.0,
+      "rating": 2,
+      "tankSize": "medium"
+    },
+    {
+      "imageUrl": "https://picsum.photos/200/300",
+      "productTitle": "Prodct9",
+      "price": 129.0,
+      "rating": 4,
+      "tankSize": "small"
+    },
+    {
+      "imageUrl": "https://picsum.photos/200/300",
+      "productTitle": "Prodct10",
+      "price": 130.0,
+      "rating": 5,
+      "tankSize": "large"
+    }
+  ]
+}
