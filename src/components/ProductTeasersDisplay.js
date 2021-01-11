@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 function ProductTeasersDisplay(props) {
-  const { productsList } = props;
+  const { productsList, handleChoseProduct } = props;
 
   return (
     <div>
@@ -11,7 +11,10 @@ function ProductTeasersDisplay(props) {
           <div className="productTraserTitle">{product.productTitle}</div>
           <div className="productTraserPrice">${product.price}</div>
           <div className="productTraserRating">{product.rating}</div>
-          <button className="productTraserChooseButton">
+          <button
+            className="productTraserChooseButton"
+            onClick={(event) => handleChoseProduct(event, product)}
+          >
             <div className="productTraserChooseButtonText">Choose</div>
           </button>
         </div>

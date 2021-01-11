@@ -59,6 +59,7 @@ function PopUpWindow(props) {
         <ProductTeasersDisplay
           listOfProcucts={content}
           productsList={productsList}
+          handleChoseProduct={props.handleChoseProduct}
         />
       </div>
     );

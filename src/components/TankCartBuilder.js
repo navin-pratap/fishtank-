@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import MyTank from './MyTank';
 import TankAccessories from './TankAccessories';
 import PopUpWindow from './PopUpWindow';
+import SelectedProductDetails from './SelectedProductDetails';
 
 const testData = {
   title: 'Choose A Tank',
@@ -35,10 +36,22 @@ const testData = {
 
 function TankCartBuilder(props) {
   const [isOpen, setIsOpen] = useState(false);
+  const [isOpenSelectedProduct, setIsOpenSelectedProduct] = useState(false);
+  const [selectedProduct, setSelectedProduct] = useState(null);
 
   const togglePopup = () => {
     setIsOpen(!isOpen);
   };
+  const handleChoseProduct = (event, selectedProduct) => {
+    console.log(event, selectedProduct);
+    setSelectedProduct(selectedProduct);
+    handleSelectedProductPopupOpenClose();
+  };
+  const handleSelectedProductPopupOpenClose = () => {
+    setIsOpen(!isOpen);
+    setIsOpenSelectedProduct(!isOpenSelectedProduct);
+  };
+
   return (
     <div className="tankCartBuilder">
       <MyTank />
@@ -49,7 +62,20 @@ function TankCartBuilder(props) {
         onClick={togglePopup}
       />
       {isOpen && (
-        <PopUpWindow handleClose={togglePopup} pageDetails={testData} />
+        <PopUpWindow
+          handleClose={togglePopup}
+          pageDetails={testData}
+          handleChoseProduct={handleChoseProduct}
+        />
+      )}
+      {isOpenSelectedProduct && (
+        <SelectedProductDetails
+          {...props}
+          selectedProduct={selectedProduct}
+          handleSelectedProductPopupOpenClose={
+            handleSelectedProductPopupOpenClose
+          }
+        />
       )}
     </div>
   );
